@@ -1,0 +1,20 @@
+:root {
+  --light-green: #a8a584;
+  --green-dark: #6a6f4c;
+  --brown: #35221b;
+  --background: #e5dcd2;
+  --header: #afa79e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background);
+}

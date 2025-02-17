@@ -1,14 +1,90 @@
-.header {
-  background-color: var(--header);
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem
+.desktopOnly {
+  display: none;
 }
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.headerMobile {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.menuMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15.625rem;
+  height: 100vh;
+  background-color: white;
+  transform: translateX(-210%);
+  transition: transform 0.3s ease-in-out;
+  padding: 2rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menuMobile.active {
+  transform: translateX(0);
+}
+
+.menuMobile nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuMobile nav ul li {
+  margin: 1rem 0;
+}
+
+.menuMobile nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: grid;
+  gap: .5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .header img {
   height: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -16,3 +92,67 @@ h1 {
   font-weight: bold;
 }
 
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 12.5rem;
+  align-items: center;
+}
+
+@media (width >=80em) {
+  nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .navLinks {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header img {
+    height: 2rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .header {
+    width: 100%;
+    height: 4rem;
+    padding: 2.5rem 7.5rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .desktopOnly {
+    display: flex;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .menuMobile {
+    display: none;
+  }
+}

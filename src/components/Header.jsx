@@ -33,7 +33,7 @@ export function Header() {
         </nav>
       </div>
 
-      <div class={styles.headerMobile}>
+      <div className={styles.headerMobile}>
         <button onClick={toggleMenu} className={styles.menuButton}>
           <SlMenu />
         </button>

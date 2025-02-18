@@ -27,8 +27,8 @@ export function Header() {
             <li><a href="#">Contato</a></li>
           </ul>
           <div className={styles.socialIcons}>
-            <img src={instagram} alt="Instagram" />
-            <img src={whatsapp} alt="Whatsapp" />
+            <a href="https://www.instagram.com/psi.patriciabraccio"><img src={instagram} alt="Instagram" /></a>
+            <a href="https://api.whatsapp.com/send/?phone=5519996438363&text=Oie%2C+gostaria+de+saber+mais+informa%C3%A7%C3%B5es+sobre+a+terapia%21+&type=phone_number&app_absent=0"><img src={whatsapp} alt="Whatsapp" /></a>
           </div>
         </nav>
       </div>

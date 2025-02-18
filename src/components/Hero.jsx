@@ -1,10 +1,21 @@
 import styles from './Hero.module.css';
 import fotoPerfil from '../assets/fotoPerfil.jpg'
 
+import { useState, useEffect } from 'react';
+
 export function Hero() {
+  const [isLoaded, setIsLoaded] = useState(false)
+  
+    useEffect(() => {
+      setTimeout(() => {
+        setIsLoaded(true)
+      }, 500);
+    }, []);
+    console.log("Classes aplicadas:", isLoaded ? styles.pageLoaded : "");
+
   return (
     <main>
-      <div className={styles.heroContainer}>
+      <div className={`${styles.heroContainer} ${isLoaded ? styles.pageLoaded : ""}`}>
         <div className={styles.imageContainer}>
           <img src={fotoPerfil} alt="" />
         </div>

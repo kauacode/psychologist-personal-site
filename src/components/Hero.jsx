@@ -14,7 +14,9 @@ export function Hero() {
             <p>A busca pelo equilíbrio emocional pode ser desafiadora, mas você não precisa percorrer esse caminho sozinho. A psicoterapia oferece um espaço acolhedor para compreender seus sentimentos, superar dificuldades e desenvolver estratégias para lidar com a ansiedade e outras questões que afetam sua qualidade de vida.
               Com o apoio de um profissional, você poderá fortalecer sua autoconfiança, melhorar seus relacionamentos e aprender a viver de forma mais leve e saudável.  </p>
           </div>
-          <button className={styles.contactButton}>Entre em contato!</button>
+          <a className={styles.contactButton} href="https://api.whatsapp.com/send/?phone=5519996438363&text=Oie%2C+gostaria+de+saber+mais+informa%C3%A7%C3%B5es+sobre+a+terapia%21+&type=phone_number&app_absent=0">
+            Entre em contato!
+          </a>
         </div>
       </div>
     </main>

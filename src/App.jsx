@@ -1,15 +1,9 @@
-import './App.module.css'
-import './global.css'
-import { Header } from './components/Header'
-import { Hero } from './components/Hero'
+import { Main } from './pages/Main'
 
 export function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <Hero />
-      </main>
+    <div className="app-container">
+      <Main />
     </div>
   )
 }

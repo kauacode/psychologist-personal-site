@@ -1,17 +1,17 @@
 import styles from './Hero.module.css';
-import fotoPerfil from '../assets/fotoPerfil.jpg'
+import fotoPerfil from '../../assets/fotoPerfil.jpg'
 
 import { useState, useEffect } from 'react';
 
 export function Hero() {
   const [isLoaded, setIsLoaded] = useState(false)
-  
-    useEffect(() => {
-      setTimeout(() => {
-        setIsLoaded(true)
-      }, 500);
-    }, []);
-    console.log("Classes aplicadas:", isLoaded ? styles.pageLoaded : "");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true)
+    }, 500);
+  }, []);
+  console.log("Classes aplicadas:", isLoaded ? styles.pageLoaded : "");
 
   return (
     <main>

@@ -4,6 +4,10 @@
   --brown: #35221b;
   --background: #e5dcd2;
   --header: #afa79e;
+
+  /* FONTS */
+  --inter: "Inter", serif;
+  --poppins: "Poppins", serif;
 }
 
 * {

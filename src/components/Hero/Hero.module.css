@@ -1,3 +1,9 @@
+main {
+  background-image: url("../../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 main h1 {
   font-family: var(--poppins);
 }
@@ -140,7 +146,7 @@ main p {
   }
 
   .textContainer h1 {
-    text-align:left;
+    text-align: left;
     margin: 0;
   }
 

@@ -75,8 +75,7 @@ nav {
 }
 
 #logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  height: 6rem;
 }
 
 .navLinks {
@@ -132,7 +131,7 @@ h1 {
     padding: 0;
   }
 
-  .header img {
+  .header a img {
     height: 2rem;
     width: auto;
     display: block;
@@ -141,6 +140,7 @@ h1 {
   nav ul li a {
     text-decoration: none;
     color: black;
+    font-size: 1.25rem;
   }
 
   h1 {

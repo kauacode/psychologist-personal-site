@@ -2,6 +2,8 @@ import styles from './Header.module.css';
 import instagram from '../../assets/instagram.png';
 import whatsapp from '../../assets/whatsapp.png';
 
+import logo from '../../assets/logoFinal.png'
+
 import { SlMenu } from "react-icons/sl";
 
 import { useState } from 'react';
@@ -17,7 +19,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.desktopOnly}>
         <nav>
-          <h1 id={styles.logo}>PSI PATI</h1>
+          <img id={styles.logo} src={logo} alt="" />
           <ul className={styles.navLinks}>
             <li><a href="#">Início</a></li>
             <li><a href="#">Benefícios</a></li>
@@ -45,7 +47,7 @@ export function Header() {
       <div className={`${styles.menuMobile} ${isOpen ? styles.active : ''}`}>
         <nav>
           <ul className={styles.navLinks}>
-            <h1>PSI PATI</h1>
+            <img id={styles.logo} src={logo} alt="" />
             <li><a href="#">Início</a></li>
             <li><a href="#">Benefícios</a></li>
             <li><a href="#">Sobre</a></li>

@@ -1,5 +1,21 @@
-.background {
-  background:#e5dcd2; 
+.backgroundContainer {
+  background: #EAE8E5; 
   width: 100%;
   height: 100vh;
+  text-align: center;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  place-items: center; /* Alinha os cards no centro */
+}
+
+@media(min-width: 1280px) {
+  .cardContainer {
+    max-width: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+  }
 }

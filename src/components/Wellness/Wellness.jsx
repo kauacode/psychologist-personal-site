@@ -1,6 +1,6 @@
-import styles from './Benefits.module.css'
+import styles from './Wellness.module.css'
 
-export function Benefits() {
+export function Wellness() {
   return (
     <main>
       <div className={styles.background}>

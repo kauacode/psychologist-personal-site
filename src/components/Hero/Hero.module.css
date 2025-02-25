@@ -19,7 +19,8 @@ main {
 }
 
 main h1 {
-  font-family: var(--poppins);
+  font-family: var(--abrilFatface);
+  font-weight: 400;
 }
 
 main p {
@@ -114,7 +115,8 @@ main p {
   border-radius: 1rem;
   cursor: pointer;
   border: none;
-  background-color: antiquewhite;
+  color: white;
+  background-color: #6a6f4c;
   outline: none;
   transition: background-color .3s ease-in-out, transform .3s ease-in-out;
   transform: scale(1);
@@ -124,13 +126,12 @@ main p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: inherit;
   position: relative;
   z-index: 2;
 }
 
 .contactButton:hover {
-  background-color: bisque;
+  background-color: #494c34;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -170,12 +171,13 @@ main p {
   .textContainer h1 {
     text-align: left;
     margin: 0;
+    color: #6a6f4c;
   }
 
   .textContainer p {
     margin: 0;
   }
-  
+
   .contactButton {
     align-self: flex-start;
   }

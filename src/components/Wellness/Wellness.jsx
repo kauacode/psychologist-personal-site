@@ -1,6 +1,8 @@
 import styles from './Wellness.module.css'
 import Card from '../Card/Card'
 
+import imagemLendo from '../../assets/sideImage.png'
+
 export function Wellness() {
   const problems = [
     { title: "Ansiedade", description: "Descricao ansiedade" },
@@ -14,8 +16,11 @@ export function Wellness() {
   return (
     <main>
       <div className={styles.backgroundContainer}>
-        <h2>Talvez você esteja sentindo</h2>
+        <div className={styles.imageContainer}>
+          <img src={imagemLendo} alt="" />
+        </div>
         <div className={styles.cardContainer}>
+          <h2>Talvez você esteja sentindo</h2>
           {problems.map((item, index) =>
             <Card key={index} title={item.title} description={item.description} />
           )}

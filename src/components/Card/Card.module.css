@@ -1,6 +1,33 @@
 .card {
-  width: 20rem;
-  height: 4rem;
-  background-color: #F6F5F5;
-  border-radius: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 400px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.descriptionWrapper {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.8s ease, opacity 1s ease;
+  opacity: 0;
+}
+
+.descriptionWrapper.show {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.description {
+  margin-top: 12px;
+  color: #666;
 }

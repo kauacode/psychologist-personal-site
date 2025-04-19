@@ -33,13 +33,14 @@ h1 {
   font-family: var(--poppins);
   font-size: 2rem;
   color: var(--green-dark);
+  height: fit-content;
 }
 
 @media(min-width: 1280px) {
   .backgroundContainer {
     flex-direction: row;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 5rem;
   }
 
@@ -50,6 +51,7 @@ h1 {
     align-items: center;
     text-align: left;
     order: 1;
+    margin-bottom: 2rem;
   }
 
   .imageContainer {

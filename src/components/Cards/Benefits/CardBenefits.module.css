@@ -15,12 +15,13 @@
 
 .cardBenefits h3 {
   font-size: 1.5rem;
+  font-weight: 600; 
   margin: 0;
 }
 
 .cardBenefits p {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   word-wrap: break-word;
   overflow-wrap: break-word;

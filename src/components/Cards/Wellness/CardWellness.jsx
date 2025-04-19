@@ -6,7 +6,7 @@ const Card = ({title, description, isOpen, onToggle }) => {
   Card.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    isOpen: PropTypes.number,
+    isOpen: PropTypes.bool,
     onToggle: PropTypes.func
   };
 

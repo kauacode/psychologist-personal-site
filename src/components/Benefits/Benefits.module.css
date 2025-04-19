@@ -11,13 +11,13 @@
 }
 
 .titleContainer {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #2F3E2E;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .subtitleContainer {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .cardsWrapper {
@@ -29,4 +29,14 @@
   align-items: flex-start;
   width: 100%;
   max-width: 1200px;
+}
+
+@media (min-width: 1280px) {
+  .titleContainer {
+    font-size: 4rem;
+  }
+
+  .subtitleContainer {
+    font-size: 2rem;
+  }
 }

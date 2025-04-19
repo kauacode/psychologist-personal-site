@@ -30,8 +30,6 @@ main p {
 .heroContainer {
   display: grid;
   /* Altura fixa com min-height como fallback para garantir consistência */
-  height: 700px;
-  min-height: 700px;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -97,6 +95,7 @@ main p {
   line-height: 1.4;
   max-width: 65ch;
   margin: 0 auto;
+  color: #6a6f4c;
 }
 
 .textContainer p {

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './Wellness.module.css'
-import Card from '../Card/Card'
+import Card from '../Cards/Wellness/CardWellness'
 
 import Lendo from '../../assets/fotoLendo.jpg'
 
@@ -33,7 +33,7 @@ export function Wellness() {
           <img src={Lendo} alt="" />
         </div>
         <div className={styles.cardContainer}>
-          <h2>Talvez você esteja sentindo</h2>
+          <h1>Talvez você esteja sentindo</h1>
           {problems.map((item, index) =>
             <Card 
               key={index} 

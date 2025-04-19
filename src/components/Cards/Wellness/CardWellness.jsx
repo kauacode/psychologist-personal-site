@@ -1,4 +1,4 @@
-import styles from './Card.module.css'
+import styles from '../../Cards/Wellness/CardWellness.module.css'
 import PropTypes from 'prop-types';
 
 const Card = ({title, description, isOpen, onToggle }) => {

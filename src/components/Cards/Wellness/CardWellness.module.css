@@ -8,6 +8,9 @@
   background-color: #f9f9f9;
   cursor: pointer;
   position: relative;
+  border: 1px solid #6A6F4C;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .card::before {

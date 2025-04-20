@@ -28,23 +28,28 @@ export function Wellness() {
 
   return (
     <main>
-      <div className={styles.backgroundContainer}>
-        <div className={styles.imageContainer}>
-          <img src={Lendo} alt="" />
-        </div>
-        <div className={styles.cardContainer}>
-          <h1>Talvez você esteja sentindo</h1>
-          {problems.map((item, index) =>
-            <Card 
-              key={index} 
-              title={item.title} 
-              description={item.description}
-              isOpen={openIndex === index}
-              onToggle={() => handleToggle(index)}           
-            />
-          )}
-        </div>
+  <div className={styles.backgroundContainer}>
+    <div className={styles.wrapper}>
+      <div className={styles.imageContainer}>
+        <img src={Lendo} alt="" />
       </div>
-    </main>
+      <div className={styles.cardContainer}>
+        <h1>Talvez você esteja sentindo</h1>
+        <ul className={styles.cardWrapper}>
+          {problems.map((item, index) =>
+            <li key={index}>
+              <Card 
+                title={item.title} 
+                description={item.description}
+                isOpen={openIndex === index}
+                onToggle={() => handleToggle(index)}           
+              />
+            </li>
+          )}
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
   )
 }

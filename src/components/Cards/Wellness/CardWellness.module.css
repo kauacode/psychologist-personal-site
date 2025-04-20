@@ -1,12 +1,22 @@
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 30px;
+  padding: 30px 30px 30px 50px; /* espaço para a bolinha */
   max-width: 400px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   background-color: #f9f9f9;
   cursor: pointer;
+  position: relative;
+}
+
+.card::before {
+  content: '•';
+  position: absolute;
+  left: 20px;
+  top: 32px; /* ajusta a altura para alinhar com o título */
+  font-size: 1.5rem;
+  color: var(--green-dark);
 }
 
 .title {
@@ -30,8 +40,4 @@
 .description {
   margin-top: 12px;
   color: #666;
-}
-
-h3 {
-  font-size: 32px;
 }

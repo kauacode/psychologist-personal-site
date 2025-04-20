@@ -1,6 +1,6 @@
 .benefitsContainer {
   width: 100%;
-  min-height: 80vh;
+  height: fit-content;
   background-color: #D0E3D2;
   display: flex;
   flex-direction: column;

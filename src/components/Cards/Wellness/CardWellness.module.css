@@ -1,7 +1,7 @@
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 30px 30px 30px 50px; /* espaço para a bolinha */
+  padding: 30px 30px 30px 50px;
   max-width: 400px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -10,14 +10,17 @@
   position: relative;
   border: 1px solid #6A6F4C;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+}
 
+.card:hover {
+  background-color: #eeeded;
 }
 
 .card::before {
   content: '•';
   position: absolute;
   left: 20px;
-  top: 32px; /* ajusta a altura para alinhar com o título */
+  top: 32px;
   font-size: 1.5rem;
   color: var(--green-dark);
 }
